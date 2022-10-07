@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert('hELLO, group!');
+    </script>
+    <script src="access.js"></script>
+</head>
+<body>
+    
+
+    <script>
+        var result = confirm('Хотите покинуть сайт?');
+        // debugger;
+        // конкатенация - операция сложения строк
+        console.log('Результат: ' + result);
+
+        // интерполяция - подстановка в маске строки
+        console.log(`Результат: ${result}`);
+
+        if(result) {
+            window.close();
+        } else {
+            window.open('https://ya.ru');
+        }
+        // result ? window.close() : window.open('https://ya.ru');
+
+        var apples = "2";
+        var oranges = "3";
+        // унарный плюс конвертирует строку к числу, если это возможно
+        // если нет, то будет ошибка вычисления NaN
+        console.log(Number(apples) + +oranges)
+        
+        var tmp1 = false;
+        var tmp2 = true;
+        tmp2 &&= tmp1;
+        console.log(tmp2);
+    </script>
+</body>
+</html>
